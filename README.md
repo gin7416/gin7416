@@ -9,7 +9,7 @@ Bioinformatics MS (NYCU, 2026) working on data pipelines, local-LLM applications
 #### 作品
 
 **[ERP AI Copilot](https://github.com/gin7416/erp-ai-copilot)**：用中文查詢企業資料與公司 SOP 的地端 LLM 系統（模擬資料）
-- Airflow ＋ dbt 資料管線（45 項資料測試，被剔除的資料都記錄原因）；以 dbt 欄位說明作語意層的 Text-to-SQL，兩層唯讀 SQL 防護；中文 BM25 ＋ bge-m3 的 SOP 檢索；FastAPI 與 MCP server。
+- Airflow ＋ dbt 資料管線（29 項資料測試，被剔除的資料都記錄原因）；以 dbt 欄位說明作語意層的 Text-to-SQL，兩層唯讀 SQL 防護；中文 BM25 ＋ bge-m3 的 SOP 檢索；FastAPI 與 MCP server。
 - 評測：36 題中文資料查詢與 26 題 SOP 檢索測試題。筆電上的 3B 地端模型加入語意層與錯誤修正迴圈後，準確率 22.2% → 66.7%（嚴格計分 38.9%）；向量檢索使 SOP 第 1 名命中率 84.6% → 88.5%。完整報告：[EVAL_REPORT](https://github.com/gin7416/erp-ai-copilot/blob/main/results/EVAL_REPORT.md)。
 - CI：66 項測試、實際執行 Airflow DAG、Docker 與 Kubernetes（kind）部署驗證。
 
